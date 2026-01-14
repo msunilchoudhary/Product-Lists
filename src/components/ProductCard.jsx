@@ -16,7 +16,7 @@ function ProductCard() {
 
   const productSelector = useSelector((state) => state.products.items);
 
-  console.log(productSelector);
+  // console.log(productSelector);
 
   return (
     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 px-4 py-8">
@@ -42,9 +42,7 @@ function ProductCard() {
             <p className="text-sm text-gray-500 mt-1 whitespace-nowrap text-ellipsis overflow-hidden">
               {item?.description}
             </p>
-            {/* <p className="text-sm text-green-500 mt-2 whitespace-nowrap text-ellipsis overflow-hidden">
-        {item?.availabilityStatus}
-      </p> */}
+            
             <p className="text-sm text-gray-500 mt-3"></p>
             <p className="text-sm text-gray-500 mt-3">
               <span className="flex gap-1">
@@ -101,7 +99,7 @@ function ProductCard() {
                 </button>
               )}
             </div>
-            {/* <button onClick={() => dispatch(removeItem(1))} className='btn bg-red-500 px-4 py-2 rounded-lg hover:bg-red-700 text-white transition-all duration-300'>Remove from cart</button> */}
+            
           </div>
         </div>
       ))}

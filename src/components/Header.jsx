@@ -13,10 +13,9 @@ function Header() {
         </div>
 
         <nav className="hidden md:flex space-x-8">
-          <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
-          <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">About</a>
-          <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Products</a>
-          <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+          <Link to="/" className="text-gray-700 hover:text-amber-400 font-medium">Home</Link>
+          <Link to="/" className="text-gray-700 hover:text-amber-400 font-medium">Products</Link>
+          <Link to="/cart" className="text-gray-700 hover:text-amber-400 font-medium">Cart</Link>
         </nav>
 
         
