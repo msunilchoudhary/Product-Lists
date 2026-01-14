@@ -90,7 +90,15 @@ function CartList() {
           <div className="flex justify-between text-gray-600 mb-2">
             <span>Subtotal</span>
             <span>
-              $ {cartItems.reduce((sum, item) => sum + item.price, 0)}
+              $ {cartItems
+                .reduce(
+                  (sum, item) =>
+                    item.quantity
+                      ? sum + item.price * item.quantity
+                      : sum + item.price,
+                  0
+                )
+                .toFixed(2)}
             </span>
           </div>
 
